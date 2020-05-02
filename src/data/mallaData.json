@@ -7,7 +7,7 @@
       "nombre": "Álgebra y Geometría",
       "creditos": 7,
       "prereq": [],
-      "selected": false
+      "selected": "unselected"
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "nombre": "Cálculo I",
       "creditos": 7,
       "prereq": [],
-      "selected": false
+      "selected": "unselected"
     },
     {
       "id": 3,
@@ -25,7 +25,7 @@
       "nombre": "Química",
       "creditos": 6,
       "prereq": [],
-      "selected": false
+      "selected": "unselected"
     },
     {
       "id": 4,
@@ -34,7 +34,7 @@
       "nombre": "Programación",
       "creditos": 6,
       "prereq": [],
-      "selected": false
+      "selected": "unselected"
     },
     {
       "id": 5,
@@ -43,7 +43,7 @@
       "nombre": "Comunicación para la Ingeniería",
       "creditos": 5,
       "prereq": [],
-      "selected": false
+      "selected": "unselected"
     },
     {
       "id": 6,
@@ -52,7 +52,7 @@
       "nombre": "Álgebra y Geometría",
       "creditos": 6,
       "prereq": [1],
-      "selected": false
+      "selected": "unselected"
     },
     {
       "id": 7,
@@ -61,7 +61,7 @@
       "nombre": "Cálculo I",
       "creditos": 6,
       "prereq": [2],
-      "selected": false
+      "selected": "unselected"
     },
     {
       "id": 8,
@@ -70,7 +70,7 @@
       "nombre": "Mecánica",
       "creditos": 7,
       "prereq": [2],
-      "selected": false
+      "selected": "unselected"
     },
     {
       "id": 9,
@@ -79,7 +79,7 @@
       "nombre": "Programación Avanzada",
       "creditos": 6,
       "prereq": [4],
-      "selected": false
+      "selected": "unselected"
     },
     {
       "id": 10,
@@ -88,7 +88,7 @@
       "nombre": "CFG",
       "creditos": 5,
       "prereq": [],
-      "selected": false
+      "selected": "unselected"
     },
     {
       "id": 11,
@@ -97,7 +97,7 @@
       "nombre": "Ecuaciones Diferenciales",
       "creditos": 6,
       "prereq": [6, 7],
-      "selected": false
+      "selected": "unselected"
     },
     {
       "id": 12,
@@ -106,7 +106,7 @@
       "nombre": "Cálculo III",
       "creditos": 6,
       "prereq": [7],
-      "selected": false
+      "selected": "unselected"
     },
     {
       "id": 13,
@@ -115,7 +115,7 @@
       "nombre": "Calor y Ondas",
       "creditos": 7,
       "prereq": [7, 8],
-      "selected": false
+      "selected": "unselected"
     },
     {
       "id": 14,
@@ -124,7 +124,7 @@
       "nombre": "Estruct. De Datos y Algoritmos",
       "creditos": 6,
       "prereq": [9],
-      "selected": false
+      "selected": "unselected"
     },
     {
       "id": 15,
@@ -133,7 +133,7 @@
       "nombre": "Redes de Datos",
       "creditos": 6,
       "prereq": [9],
-      "selected": false
+      "selected": "unselected"
     },
     {
       "id": 16,
@@ -142,7 +142,7 @@
       "nombre": "Probabilidades y Estadística",
       "creditos": 6,
       "prereq": [7],
-      "selected": false
+      "selected": "unselected"
     },
     {
       "id": 17,
@@ -151,7 +151,7 @@
       "nombre": "Electrónica y Electrotecnia",
       "creditos": 6,
       "prereq": [8, 11, 12],
-      "selected": false
+      "selected": "unselected"
     },
     {
       "id": 18,
@@ -160,7 +160,7 @@
       "nombre": "Electricidad y Magnetismo",
       "creditos": 7,
       "prereq": [11, 12],
-      "selected": false
+      "selected": "unselected"
     },
     {
       "id": 19,
@@ -169,7 +169,7 @@
       "nombre": "Bases de Datos",
       "creditos": 6,
       "prereq": [14],
-      "selected": false
+      "selected": "unselected"
     },
     {
       "id": 20,
@@ -178,7 +178,7 @@
       "nombre": "Desarrollo Web y Móvil",
       "creditos": 6,
       "prereq": [9],
-      "selected": false
+      "selected": "unselected"
     },
     {
       "id": 21,
@@ -187,7 +187,7 @@
       "nombre": "Inglés I",
       "creditos": 5,
       "prereq": [],
-      "selected": false
+      "selected": "unselected"
     }
   ]
 }

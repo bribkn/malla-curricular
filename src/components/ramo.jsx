@@ -4,6 +4,19 @@ class Ramo extends Component {
   constructor(props) {
     super(props);
     this.state = {};
+    this.renderSelected = this.renderSelected.bind(this);
+  }
+
+  renderSelected() {
+    if (this.props.ramo.selected === "selected") {
+      return "card shadow lg text-center text-white bg-success m-2";
+    } else if (this.props.ramo.selected === "unselected") {
+      return "card shadow lg text-center border-success m-2 ";
+    } else if (this.props.ramo.selected === "prereq") {
+      return "card shadow lg text-center text-white bg-info m-2 ";
+    } else {
+      return "card shadow lgtext-center text-white bg-danger m-2";
+    }
   }
 
   render() {
@@ -14,7 +27,7 @@ class Ramo extends Component {
           this.props.onSelected(
             this.props.ramo.id,
             this.props.semestre,
-            true,
+            "selected",
             this.props.ramo.prereq
           );
         }}
@@ -22,16 +35,12 @@ class Ramo extends Component {
           this.props.onSelected(
             this.props.ramo.id,
             this.props.semestre,
-            false,
+            "unselected",
             this.props.ramo.prereq
           );
         }}
-        style={{ width: "10rem", textAlign: "center" }}
-        className={
-          this.props.ramo.selected
-            ? "card text-white bg-success m-2"
-            : "card border-success m-2 "
-        }
+        style={{ width: "15rem" }}
+        className={this.renderSelected()}
       >
         <div className="card-header">{this.props.ramo.codigo}</div>
         <div className="card-body">

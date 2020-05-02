@@ -13,20 +13,25 @@ class Malla extends Component {
     this.handlePrereq = this.handlePrereq.bind(this);
   }
 
-  handlePrereq(ramoId, semestreId, selected) {
-    // console.log(ramoId, semestreId, selected);
-    this.setState((prevState) => {
-      let newState = { ...prevState };
-      newState["MallaData"].ramos[ramoId - 1].selected = selected;
-      return newState;
-    });
+  handlePrereq(ramoId, selected) {
+    if (selected === "selected") {
+      this.setState((prevState) => {
+        let newState = { ...prevState };
+        newState["MallaData"].ramos[ramoId - 1].selected = "prereq";
+        return newState;
+      });
+    } else {
+      this.setState((prevState) => {
+        let newState = { ...prevState };
+        newState["MallaData"].ramos[ramoId - 1].selected = "unselected";
+        return newState;
+      });
+    }
   }
 
   handleSelected(ramoId, semestreId, selected, prereq) {
-    // console.log(ramoId, semestreId, selected, prereq);
-
     for (let i = 0; i < prereq.length; i++) {
-      this.handlePrereq(prereq[i], semestreId, selected);
+      this.handlePrereq(prereq[i], selected);
     }
     this.setState((prevState) => {
       let newState = { ...prevState };
@@ -57,15 +62,33 @@ class Malla extends Component {
   }
 
   renderMalla() {
-    const ramos = [];
+    const semestres = [];
     for (var i = 0; i < 4; i++) {
-      ramos.push(<div className="row">{this.renderSemestre(i + 1)}</div>);
+      semestres.push(<div className="row">{this.renderSemestre(i + 1)}</div>);
     }
-    return ramos;
+    return semestres;
   }
 
   render() {
-    return <div className="container">{this.renderMalla()}</div>;
+    return (
+      <div>
+        <div className="alert alert-warning" role="alert">
+          Página en <strong>construcción!</strong>
+        </div>
+        <div className="btn-group" role="group" aria-label="Basic example">
+          <button type="button" className="btn btn-secondary">
+            Informática y Telecomunicaciones
+          </button>
+          <button type="button" className="btn btn-secondary">
+            Obras Civiles
+          </button>
+          <button type="button" className="btn btn-secondary">
+            Industrial
+          </button>
+        </div>
+        <div className="container-fluid">{this.renderMalla()}</div>
+      </div>
+    );
   }
 }
 
