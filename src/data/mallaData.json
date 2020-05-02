@@ -1,0 +1,193 @@
+{
+  "ramos": [
+    {
+      "id": 1,
+      "semestre": 1,
+      "codigo": "CBM-1000",
+      "nombre": "Álgebra y Geometría",
+      "creditos": 7,
+      "prereq": [],
+      "selected": false
+    },
+    {
+      "id": 2,
+      "semestre": 1,
+      "codigo": "CBM-1001",
+      "nombre": "Cálculo I",
+      "creditos": 7,
+      "prereq": [],
+      "selected": false
+    },
+    {
+      "id": 3,
+      "semestre": 1,
+      "codigo": "CBQ-1000",
+      "nombre": "Química",
+      "creditos": 6,
+      "prereq": [],
+      "selected": false
+    },
+    {
+      "id": 4,
+      "semestre": 1,
+      "codigo": "CIT-1000",
+      "nombre": "Programación",
+      "creditos": 6,
+      "prereq": [],
+      "selected": false
+    },
+    {
+      "id": 5,
+      "semestre": 1,
+      "codigo": "FIC-1000",
+      "nombre": "Comunicación para la Ingeniería",
+      "creditos": 5,
+      "prereq": [],
+      "selected": false
+    },
+    {
+      "id": 6,
+      "semestre": 2,
+      "codigo": "CBM-1002",
+      "nombre": "Álgebra y Geometría",
+      "creditos": 6,
+      "prereq": [1],
+      "selected": false
+    },
+    {
+      "id": 7,
+      "semestre": 2,
+      "codigo": "CBM-1003",
+      "nombre": "Cálculo I",
+      "creditos": 6,
+      "prereq": [2],
+      "selected": false
+    },
+    {
+      "id": 8,
+      "semestre": 2,
+      "codigo": "CBF-1000",
+      "nombre": "Mecánica",
+      "creditos": 7,
+      "prereq": [2],
+      "selected": false
+    },
+    {
+      "id": 9,
+      "semestre": 2,
+      "codigo": "CIT-1010",
+      "nombre": "Programación Avanzada",
+      "creditos": 6,
+      "prereq": [4],
+      "selected": false
+    },
+    {
+      "id": 10,
+      "semestre": 2,
+      "codigo": "",
+      "nombre": "CFG",
+      "creditos": 5,
+      "prereq": [],
+      "selected": false
+    },
+    {
+      "id": 11,
+      "semestre": 3,
+      "codigo": "CBM-1005",
+      "nombre": "Ecuaciones Diferenciales",
+      "creditos": 6,
+      "prereq": [6, 7],
+      "selected": false
+    },
+    {
+      "id": 12,
+      "semestre": 3,
+      "codigo": "CBM-1006",
+      "nombre": "Cálculo III",
+      "creditos": 6,
+      "prereq": [7],
+      "selected": false
+    },
+    {
+      "id": 13,
+      "semestre": 3,
+      "codigo": "CBF-1001",
+      "nombre": "Calor y Ondas",
+      "creditos": 7,
+      "prereq": [7, 8],
+      "selected": false
+    },
+    {
+      "id": 14,
+      "semestre": 3,
+      "codigo": "CIT-2006",
+      "nombre": "Estruct. De Datos y Algoritmos",
+      "creditos": 6,
+      "prereq": [9],
+      "selected": false
+    },
+    {
+      "id": 15,
+      "semestre": 3,
+      "codigo": "CIT-2114",
+      "nombre": "Redes de Datos",
+      "creditos": 6,
+      "prereq": [9],
+      "selected": false
+    },
+    {
+      "id": 16,
+      "semestre": 4,
+      "codigo": "CIT-2204",
+      "nombre": "Probabilidades y Estadística",
+      "creditos": 6,
+      "prereq": [7],
+      "selected": false
+    },
+    {
+      "id": 17,
+      "semestre": 4,
+      "codigo": "CIT-2107",
+      "nombre": "Electrónica y Electrotecnia",
+      "creditos": 6,
+      "prereq": [8, 11, 12],
+      "selected": false
+    },
+    {
+      "id": 18,
+      "semestre": 4,
+      "codigo": "CBF-1002",
+      "nombre": "Electricidad y Magnetismo",
+      "creditos": 7,
+      "prereq": [11, 12],
+      "selected": false
+    },
+    {
+      "id": 19,
+      "semestre": 4,
+      "codigo": "CIT-2007",
+      "nombre": "Bases de Datos",
+      "creditos": 6,
+      "prereq": [14],
+      "selected": false
+    },
+    {
+      "id": 20,
+      "semestre": 4,
+      "codigo": "CIT-2008",
+      "nombre": "Desarrollo Web y Móvil",
+      "creditos": 6,
+      "prereq": [9],
+      "selected": false
+    },
+    {
+      "id": 21,
+      "semestre": 4,
+      "codigo": "CIG-1012",
+      "nombre": "Inglés I",
+      "creditos": 5,
+      "prereq": [],
+      "selected": false
+    }
+  ]
+}
