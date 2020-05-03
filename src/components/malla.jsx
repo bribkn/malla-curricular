@@ -5,12 +5,13 @@ import MallaData from "../data/mallaData";
 class Malla extends Component {
   constructor(props) {
     super(props);
-    this.state = { MallaData: MallaData };
+    this.state = { MallaData: MallaData, alertPrereq: false };
     this.renderRamo = this.renderRamo.bind(this);
     this.renderSemestre = this.renderSemestre.bind(this);
     this.renderMalla = this.renderMalla.bind(this);
     this.handleSelected = this.handleSelected.bind(this);
     this.handlePrereq = this.handlePrereq.bind(this);
+    this.handlePassed = this.handlePassed.bind(this);
   }
 
   handlePrereq(ramoId, selected) {
@@ -40,12 +41,43 @@ class Malla extends Component {
     });
   }
 
+  handlePassed(ramoId) {
+    let prereqPassed = true;
+
+    for (let i = 0; i < MallaData.ramos[ramoId - 1].prereq.length; i++) {
+      let idPrereq = MallaData.ramos[ramoId - 1].prereq[i];
+      if (MallaData.ramos[idPrereq - 1].passed === false) {
+        prereqPassed = false;
+      }
+    }
+    if (prereqPassed === false) {
+      this.setState((state) => ({
+        alertPrereq: true,
+      }));
+      return;
+    }
+    if (MallaData.ramos[ramoId - 1].passed === false) {
+      this.setState((prevState) => {
+        let newState = { ...prevState };
+        newState["MallaData"].ramos[ramoId - 1].passed = true;
+        return newState;
+      });
+    } else {
+      this.setState((prevState) => {
+        let newState = { ...prevState };
+        newState["MallaData"].ramos[ramoId - 1].passed = false;
+        return newState;
+      });
+    }
+  }
+
   renderRamo(ramo) {
     return (
       <Ramo
         onSelected={this.handleSelected}
-        key={ramo.id}
+        onPassed={this.handlePassed}
         ramo={ramo}
+        key={ramo.id}
         semestre={ramo.semestre}
         prereq={ramo.prereq}
       ></Ramo>
@@ -75,6 +107,7 @@ class Malla extends Component {
         <div className="alert alert-warning" role="alert">
           Página en <strong>construcción!</strong>
         </div>
+        {console.log(this.state.alertPrereq)}
         <div className="btn-group" role="group" aria-label="Basic example">
           <button type="button" className="btn btn-secondary">
             Informática y Telecomunicaciones

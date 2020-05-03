@@ -7,7 +7,8 @@
       "nombre": "Álgebra y Geometría",
       "creditos": 7,
       "prereq": [],
-      "selected": "unselected"
+      "selected": "unselected",
+      "passed": false
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "nombre": "Cálculo I",
       "creditos": 7,
       "prereq": [],
-      "selected": "unselected"
+      "selected": "unselected",
+      "passed": false
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "nombre": "Química",
       "creditos": 6,
       "prereq": [],
-      "selected": "unselected"
+      "selected": "unselected",
+      "passed": false
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "nombre": "Programación",
       "creditos": 6,
       "prereq": [],
-      "selected": "unselected"
+      "selected": "unselected",
+      "passed": false
     },
     {
       "id": 5,
@@ -43,7 +47,8 @@
       "nombre": "Comunicación para la Ingeniería",
       "creditos": 5,
       "prereq": [],
-      "selected": "unselected"
+      "selected": "unselected",
+      "passed": false
     },
     {
       "id": 6,
@@ -52,16 +57,18 @@
       "nombre": "Álgebra y Geometría",
       "creditos": 6,
       "prereq": [1],
-      "selected": "unselected"
+      "selected": "unselected",
+      "passed": false
     },
     {
       "id": 7,
       "semestre": 2,
       "codigo": "CBM-1003",
-      "nombre": "Cálculo I",
+      "nombre": "Cálculo II",
       "creditos": 6,
       "prereq": [2],
-      "selected": "unselected"
+      "selected": "unselected",
+      "passed": false
     },
     {
       "id": 8,
@@ -70,7 +77,8 @@
       "nombre": "Mecánica",
       "creditos": 7,
       "prereq": [2],
-      "selected": "unselected"
+      "selected": "unselected",
+      "passed": false
     },
     {
       "id": 9,
@@ -79,7 +87,8 @@
       "nombre": "Programación Avanzada",
       "creditos": 6,
       "prereq": [4],
-      "selected": "unselected"
+      "selected": "unselected",
+      "passed": false
     },
     {
       "id": 10,
@@ -88,7 +97,8 @@
       "nombre": "CFG",
       "creditos": 5,
       "prereq": [],
-      "selected": "unselected"
+      "selected": "unselected",
+      "passed": false
     },
     {
       "id": 11,
@@ -97,7 +107,8 @@
       "nombre": "Ecuaciones Diferenciales",
       "creditos": 6,
       "prereq": [6, 7],
-      "selected": "unselected"
+      "selected": "unselected",
+      "passed": false
     },
     {
       "id": 12,
@@ -106,7 +117,8 @@
       "nombre": "Cálculo III",
       "creditos": 6,
       "prereq": [7],
-      "selected": "unselected"
+      "selected": "unselected",
+      "passed": false
     },
     {
       "id": 13,
@@ -115,7 +127,8 @@
       "nombre": "Calor y Ondas",
       "creditos": 7,
       "prereq": [7, 8],
-      "selected": "unselected"
+      "selected": "unselected",
+      "passed": false
     },
     {
       "id": 14,
@@ -124,7 +137,8 @@
       "nombre": "Estruct. De Datos y Algoritmos",
       "creditos": 6,
       "prereq": [9],
-      "selected": "unselected"
+      "selected": "unselected",
+      "passed": false
     },
     {
       "id": 15,
@@ -133,7 +147,8 @@
       "nombre": "Redes de Datos",
       "creditos": 6,
       "prereq": [9],
-      "selected": "unselected"
+      "selected": "unselected",
+      "passed": false
     },
     {
       "id": 16,
@@ -142,7 +157,8 @@
       "nombre": "Probabilidades y Estadística",
       "creditos": 6,
       "prereq": [7],
-      "selected": "unselected"
+      "selected": "unselected",
+      "passed": false
     },
     {
       "id": 17,
@@ -151,7 +167,8 @@
       "nombre": "Electrónica y Electrotecnia",
       "creditos": 6,
       "prereq": [8, 11, 12],
-      "selected": "unselected"
+      "selected": "unselected",
+      "passed": false
     },
     {
       "id": 18,
@@ -160,7 +177,8 @@
       "nombre": "Electricidad y Magnetismo",
       "creditos": 7,
       "prereq": [11, 12],
-      "selected": "unselected"
+      "selected": "unselected",
+      "passed": false
     },
     {
       "id": 19,
@@ -169,7 +187,8 @@
       "nombre": "Bases de Datos",
       "creditos": 6,
       "prereq": [14],
-      "selected": "unselected"
+      "selected": "unselected",
+      "passed": false
     },
     {
       "id": 20,
@@ -178,7 +197,8 @@
       "nombre": "Desarrollo Web y Móvil",
       "creditos": 6,
       "prereq": [9],
-      "selected": "unselected"
+      "selected": "unselected",
+      "passed": false
     },
     {
       "id": 21,
@@ -187,7 +207,8 @@
       "nombre": "Inglés I",
       "creditos": 5,
       "prereq": [],
-      "selected": "unselected"
+      "selected": "unselected",
+      "passed": false
     }
   ]
 }
