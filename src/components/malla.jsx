@@ -107,7 +107,6 @@ class Malla extends Component {
         <div className="alert alert-warning" role="alert">
           Página en <strong>construcción!</strong>
         </div>
-        {console.log(this.state.alertPrereq)}
         <div className="btn-group" role="group" aria-label="Basic example">
           <button type="button" className="btn btn-secondary">
             Informática y Telecomunicaciones
